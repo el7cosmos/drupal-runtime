@@ -1,0 +1,30 @@
+{
+    "name": "el7cosmos/drupal-runtime",
+    "description": "Drupal integration with Symfony Runtime",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "el7cosmos",
+            "email": "el@elabee.me"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "drupal/core": "^9.3",
+        "symfony/runtime": "^5.4 || ^6.0"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "file-mapping": {
+                "[web-root]/index.php": "assets/index.php",
+                "[web-root]/update.php": "assets/update.php"
+            }
+        }
+    }
+}
