@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": ">=7.4.0",
-        "drupal/core": "^9.3",
+        "drupal/core": "^9.3 || ^10.0",
         "symfony/runtime": "^5.4 || ^6.0"
     },
     "config": {
